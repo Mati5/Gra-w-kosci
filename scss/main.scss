@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'functions';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: $primary-font-size;
+}
+
+body {
+    background-color: $body-bg;
+    background-image: url('https://images.pexels.com/photos/965879/pexels-photo-965879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    color: $text-color;
+    font-family: $primary-font-family;
+}
+
+img {
+    max-width: 100%;
+}
+
+.input-goal {
+    width: em(150px);
+    text-align: center;
+    border: em(1px) solid #ccc;
+    border-radius: em(6px);
+    padding: em(10px);
+
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: em(10px);
+    transform: translateX(-50%);
+}
+
+.game-field {
+    background-color: #fff;
+    width: em(1000px);
+    min-height: em(500px);
+    border-radius: em(10px);
+    margin: 0 auto;
+    margin-top: em(80px);
+    position: relative;
+}
+
+@import 'component/player-panel.scss';
+@import 'buttons';
+@import 'component/dice';

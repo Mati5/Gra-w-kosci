@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="game-field">
+        <div class="player-panel-container">
+            <div id="player-panel-0" class="player-panel player-panel--active">
+                <div id="player-panel-name-0" class="player-panel__name">Player 1</div>
+                <div id="player-score-0" class="player-panel__score">23</div>
+                <div class="player-panel__current-box">
+                    <div class="player-panel__current-label">Current:</div>
+                    <div id="player-current-score-0" class="player-panel__current-score">5</div>
+                </div>
+            </div>
+            <div id="player-panel-1" class="player-panel">
+                <div id="player-panel-name-1" class="player-panel__name">Player 2</div>
+                <div id="player-score-1" class="player-panel__score">18</div>
+                <div class="player-panel__current-box">
+                    <div class="player-panel__current-label">Current:</div>
+                    <div id="player-current-score-1" class="player-panel__current-score">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="dice-container">
+            <div id="dice" class="dice dice--5"></div>
+        </div>
+        <button type="button" id="btn-new" class="btn-primary btn-primary--new">
+            <img src="images/icons/refresh-icon.png" class="btn-primary__icon" alt="">New game
+        </button>
+        <button type="button" id="btn-roll" class="btn-primary btn-primary--roll">
+            <img src="images/icons/dice-icon.png" class="btn-primary__icon" alt="">Roll
+        </button>
+        <button type="button" id="btn-hold" class="btn-primary btn-primary--hold">
+            <img src="images/icons/download-icon.png" class="btn-primary__icon" alt="">Hold
+        </button>
+        <input type="text" id="game-goal" class="input-goal" placeholder="FINAL SCORE">
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

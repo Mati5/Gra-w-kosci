@@ -1,0 +1,36 @@
+.btn-primary {
+    background-color: transparent;
+    color: #3f3f3f;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0;
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+   // right: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__icon {
+        width: em(40px);
+        padding-right: em(5px);
+    }
+
+    &--new {
+        top: em(30px);
+        min-width: em(150px);
+    }
+
+    &--roll {
+        bottom: em(120px);
+    }
+
+    &--hold {
+        bottom: em(65px);
+    }
+}

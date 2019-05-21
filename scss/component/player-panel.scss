@@ -1,0 +1,66 @@
+
+
+.player-panel-container {
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+}
+
+.player-panel {
+    width: 50%;
+    text-align: center;
+    position: relative;
+
+    &--active {
+        background-color: #dfdfdf;
+        border-radius: em(10px);
+       // border-top-left-radius: em(10px);
+       // border-bottom-left-radius: em(10px);
+    }
+
+    &__name {
+        font-size: em(26px);
+        padding-top: em(60px);
+    }
+
+    &__score {
+        color: $primary-color;
+        font-size: em(60px);
+        font-weight: 900;
+        padding-top: em(20px);
+    }
+
+    &__current-box {
+        width: em(100px);
+        height: em(70px);
+        background-color: $primary-bg;
+        color: #fff;
+        border-radius: em(10px);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        right: 50%;
+        bottom: em(30px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__current-label {
+        font-size: em(14px);
+        text-shadow: 0px 0px 8px #222;
+        padding-bottom: em(5px);
+    }
+
+    &__current-score {
+        font-size: em(23px);
+    }
+
+    &__gamepad {
+        position: absolute;
+        bottom: 0;
+    }
+}
